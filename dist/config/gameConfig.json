@@ -16,12 +16,12 @@
   ],
   "freeSpinsCount": 10,
   "freeSpinsTriggerCount": 3,
-  "forceMatrix": null,
+  "forceMatrix":null,
   "betOptions": [1, 2, 5, 10],
   "defaultBet": 1,
   "balance": 100,
   "reelSpin": {
-    "initialSpeed": 18,
+    "initialSpeed": 30,
     "speedStepPerReel": 1.5,
     
     "stopDelay": 0.45,
@@ -36,9 +36,9 @@
   "reelLayout": {
     "x": 120,
     "y": 110,
-    "cellWidth": 180,
+    "cellWidth": 150,
     "cellHeight": 130,
-    "reelGap": 18,
-    "rowGap": 12
+    "reelGap": 1,
+    "rowGap": 8
   }
 }
