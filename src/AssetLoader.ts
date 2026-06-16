@@ -9,19 +9,17 @@ export class AssetLoader {
       PIXI.Assets.addBundle(this.bundleName, {
         // SymbolSheet: "/src/assets/symbols/symbols.png",
 
-        WILD: "/src/assets/symbols/wild.png",
-        J: "/src/assets/symbols/jack.png",
-        A: "/src/assets/symbols/gun.png",
-        K: "/src/assets/symbols/shotgun.png",
-        Q: "/src/assets/symbols/cash.png",
-        SCATTER: "/src/assets/symbols/scatter.png",
+        WILD: `${import.meta.env.BASE_URL}assets/symbols/wild.png`,
+        J: `${import.meta.env.BASE_URL}assets/symbols/jack.png`,
+        A: `${import.meta.env.BASE_URL}assets/symbols/gun.png`,
+        K: `${import.meta.env.BASE_URL}assets/symbols/shotgun.png`,
+        Q: `${import.meta.env.BASE_URL}assets/symbols/cash.png`,
+        SCATTER: `${import.meta.env.BASE_URL}assets/symbols/scatter.png`,
 
+        reelFrame: `${import.meta.env.BASE_URL}assets/reelFrame/reelFrameDuel.png`,
 
-        reelFrame: "/src/assets/reelFrame/reelFrameDuel.png",
-
-
-        baseBG: "/src/assets/backgrounds/basegame.png",
-        freeBG: "/src/assets/backgrounds/freegame.png",
+        baseBG: `${import.meta.env.BASE_URL}assets/backgrounds/basegame.png`,
+        freeBG: `${import.meta.env.BASE_URL}assets/backgrounds/freegame.png`,
 
       });
       this.isRegistered = true;
