@@ -241,6 +241,7 @@ export class ReelEngine {
       sprite.name = `symbol${reelIndex + 1}_${row}`;
       sprite.width = 150;
       sprite.height = 150;
+      sprite.anchor.set(0.5);
       reelContainer.addChild(sprite);
       sprites.push({ sprite, logicalRow: row - 1 });
     }
@@ -315,8 +316,8 @@ export class ReelEngine {
     const step = this.cellHeight + this.rowGap;
 
     for (const entry of reel.sprites) {
-      entry.sprite.x = 0;
-      entry.sprite.y = entry.logicalRow * step + reel.offset;
+      entry.sprite.x = entry.sprite.width / 2;
+      entry.sprite.y = entry.logicalRow * step + entry.sprite.height / 2 + reel.offset;
     }
   }
 
